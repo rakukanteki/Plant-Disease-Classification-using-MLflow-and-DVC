@@ -175,3 +175,5 @@ cython_debug/
 
 # Ignore large dataset files
 *.zip
+
+artifacts/*

@@ -1,0 +1,8 @@
+# Data ingestion related experiment.
+artifacts_root: artifacts # Where data will be stored.
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion 
+  source_URL: https://drive.google.com/file/d/1ItVgv1DhA1ptztxc0dbKMD9kXcD1hM5d/view?usp=sharing
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
