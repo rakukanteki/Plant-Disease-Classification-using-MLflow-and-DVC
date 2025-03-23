@@ -15,7 +15,7 @@
 
     MLFLOW_TRACKING_PASSWORD = your_password
     ```
-    6. Now open up terminal(if doesn't work then use `GitBash`) and run the following commands one by one:
+    6. Now open up terminal(if doesn't work then use `GitBash`) and run the following commands one by one. __And also make that you run these 3 commands everytime. If you close your system, and again run the project__:
     ```shell
     export MLFLOW_TRACKING_URI=https://dagshub.com/rakukanteki/Plant-Disease-Classification-using-MLflow-and-DVC.mlflow
 
