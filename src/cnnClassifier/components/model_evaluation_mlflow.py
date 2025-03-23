@@ -1,16 +1,11 @@
-# Create Components.
 import tensorflow as tf
 from pathlib import Path
-import urllib.request as request
-from zipfile import ZipFile
-import time
-import numpy as np
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
 from src.cnnClassifier.entity.config_entity import EvaluationConfig
-from mlflow.models.signature import infer_signature
-from src.cnnClassifier.utils.common import read_yaml, create_directories, save_json
+from src.cnnClassifier.utils.common import read_yaml, create_directories,save_json
+
 
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
@@ -67,13 +62,13 @@ class Evaluation:
             mlflow.log_metrics(
                 {"loss": self.score[0], "accuracy": self.score[1]}
             )
-
-            # Infer model signature (modify input shape based on your model)
-            dummy_input = tf.ones((1, 224, 224, 3))  # Adjust input shape accordingly
-            signature = infer_signature(dummy_input.numpy(), self.model.predict(dummy_input))
-
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
-                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model", signature=signature)
+
+                # Register the model
+                # There are other ways to use the Model Registry, which depends on the use case,
+                # please refer to the doc for more information:
+                # https://mlflow.org/docs/latest/model-registry.html#api-workflow
+                mlflow.keras.log_model(self.model, "model", registered_model_name="VGG16Model")
             else:
-                mlflow.keras.log_model(self.model, "model", signature=signature)
+                mlflow.keras.log_model(self.model, "model")

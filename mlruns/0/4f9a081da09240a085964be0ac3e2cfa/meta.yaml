@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Programming/Projects/Plant-Disease-Classification-using-MLflow-and-DVC/mlruns/0/4f9a081da09240a085964be0ac3e2cfa/artifacts
+end_time: 1742765651708
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4f9a081da09240a085964be0ac3e2cfa
+run_name: capricious-smelt-706
+run_uuid: 4f9a081da09240a085964be0ac3e2cfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742765642189
+status: 3
+tags: []
+user_id: radwa

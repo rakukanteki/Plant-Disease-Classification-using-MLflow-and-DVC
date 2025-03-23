@@ -18,3 +18,4 @@ After finishing the experiments. Now it's time for modular coding:
 3. Go to the components dir. (Create a new `component_name.py` file)
 4. Go to the pipeline dir. (Create a new `stage_num.py` file)
 5. Update the `main.py` file which is the **endpoint** of the project.
+6. Update the `dvc.yaml`. Now run `dvc repro` insted of `python main.py`.

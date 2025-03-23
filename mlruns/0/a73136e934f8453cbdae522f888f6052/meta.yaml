@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Programming/Projects/Plant-Disease-Classification-using-MLflow-and-DVC/mlruns/0/a73136e934f8453cbdae522f888f6052/artifacts
+end_time: 1742762260288
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a73136e934f8453cbdae522f888f6052
+run_name: resilient-snipe-886
+run_uuid: a73136e934f8453cbdae522f888f6052
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742762250278
+status: 3
+tags: []
+user_id: radwa
