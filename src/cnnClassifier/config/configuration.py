@@ -2,7 +2,8 @@ from src.cnnClassifier.constants import *
 from src.cnnClassifier.utils.common import *
 from src.cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                     PrepareBaseModelConfig,
-                                                    TrainingConfig)
+                                                    TrainingConfig,
+                                                    EvaluationConfig)
 import os
 
 # Reading the yaml files.
@@ -70,3 +71,15 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/PLD_3_Classes_256",
+            mlflow_uri="https://dagshub.com/rakukanteki/Plant-Disease-Classification-using-MLflow-and-DVC.mlflow",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+
+        return eval_config
