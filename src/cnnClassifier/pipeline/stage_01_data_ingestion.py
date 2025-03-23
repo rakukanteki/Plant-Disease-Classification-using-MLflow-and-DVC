@@ -17,7 +17,6 @@ class DataIngestionTrainingPipeline:
         data_ingestion.extract_zip_file()
     
 
-
 if __name__ == "__main__":
     try:
         logger.info(f"==========Stage {STAGE_NAME} has started===========")
