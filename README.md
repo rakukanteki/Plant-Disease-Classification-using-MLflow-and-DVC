@@ -11,7 +11,7 @@ This project is a proof of concept (POC) and is meant for educational purposes o
 - [My Notebook](https://www.kaggle.com/code/radwankhondokar/resnet-from-scratch-and-plant-diseases-dataset)
 
 
-## Tools Used:
+## 🧰Tools Used:
 - Python Programming Language.
 - Python Flask.
 - MLOps with DagsHub.
@@ -19,7 +19,7 @@ This project is a proof of concept (POC) and is meant for educational purposes o
 - TensorFlow.
 - Git, GitHub, and GitHub Actions.
 - AWS.
-
+- Docker
 
 ## ⚒️Project Workflow:
 1. Update config.yaml
